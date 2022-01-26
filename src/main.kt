@@ -5,7 +5,7 @@ fun main() {
         cpf = "123.123.123=10",
         nome = "alex ferrado",
         salario = 10000.0,
-        tipo = 1
+      //  tipo = 1
     )
 
     println("Bem vindex ao ByteBank ${alex.nome}")
@@ -19,8 +19,8 @@ fun main() {
     val joelma = Funcionario(
         cpf = "123.123.123=10",
         nome = "joelma B",
-        salario = 10000.0,
-        tipo = 0
+        salario = 90000.0,
+    //    tipo = 0
     )
 
 
@@ -36,11 +36,9 @@ fun main() {
         nome = "fran",
         cpf = "1234567898-11",
         salario = 20000.0,
-        senha = 123,
-        tipo = 2
-
-    )
-    println("Bem vindex ao ByteBank ${fran.nome}")
+        senha = 123)
+       // tipo = 2
+    println("Bem vindex ao ByteBank Gerente ${fran.nome}")
     println("nome ${fran.nome}")
     println("cpf ${fran.cpf}")
     println("salario ${fran.salario}")
@@ -56,14 +54,14 @@ fun main() {
 
 
     val gui = Diretor(
-        tipo = 2,
+       // tipo = 2,
         nome = "Gui",
         cpf = "123458795-5",
         salario = 4.0000,
         senha = 3000,
         plr = 2.000)
 
-                println("Bem vindex ao ByteBank ${gui.nome}")
+                println("Bem vindex ao ByteBank Diretor ${gui.nome}")
                 println("nome ${gui.nome}")
                 println("cpf ${gui.cpf}")
                 println("salario ${gui.salario}")
@@ -75,4 +73,13 @@ fun main() {
     } else {
         println("senha incorreta")
     }
-}
+    val calculadora =CalculadoraBonificacao()
+        calculadora.registra(alex)
+        calculadora.registra(fran)
+        calculadora.registra(gui)
+
+    println("-------------------------------------------------------------------------------------")
+
+    println("total de bonificaçãoo : ${calculadora.total}")
+    }
+
