@@ -1,8 +1,11 @@
-class Gerente(
+class Engenheira (
     nome: String,
     cpf: String,
     salario: Double,
-    senha: Int
+    senha: Int,
+
+    val plr: Double,
+val mulher : String
 ) : FuncionarioAdmin(
     nome = nome,
     cpf = cpf,
@@ -12,7 +15,7 @@ class Gerente(
 
     override val bonificacao: Double
         get() {
-             return salario
+            return salario
         }
 
 }

@@ -10,9 +10,19 @@ abstract class FuncionarioAdmin(
 ), Autenticavel {
 
     override fun autentica(senha: Int): Boolean {
-        if(this.senha == senha){
+        if (this.senha == senha) {
             return true
         }
         return false
     }
+fun dev(devDeusa: String): Boolean {
+    if (this.dev(devDeusa) ) {
+        return true
+    }
+    return false
+
+
 }
+
+}
+
